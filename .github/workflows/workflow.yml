@@ -50,7 +50,5 @@ jobs: # 작업 정의
 
             // async 함수 실행
             run();
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
