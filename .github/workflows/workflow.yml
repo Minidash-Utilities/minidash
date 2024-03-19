@@ -15,7 +15,7 @@ jobs: # 작업 정의
         with:
           script: | # 스크립트 시작
             async function run() {
-              const pull_request = context.payload.pull_request; # pull_request 객체 가져오기
+              const pull_request = context.payload.pull_request; // pull_request 객체 가져오기
               
               if(pull_request === undefined) { // pull_request가 없는 경우
                 console.log("This is not a pull request"); // "This is not a pull request" 출력
@@ -50,5 +50,7 @@ jobs: # 작업 정의
 
             // async 함수 실행
             run();
-              
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
