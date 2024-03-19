@@ -2,7 +2,7 @@ name: Pull Request Check # 워크플로우 이름
 
 on: # 해당 워크플로우 실행 트리거
   pull_request: # pull_request가 실행 될때만
-    types: [opend, synchronize] # PR 생성되거나 업데이트 될때
+    types: [opened, synchronize] # PR 생성되거나 업데이트 될때
 
 jobs: # 작업 정의
   check: 
